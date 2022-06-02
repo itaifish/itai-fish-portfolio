@@ -1,7 +1,6 @@
 module.exports = {
 	root: true,
-	plugins: ['react'
-	],
+	plugins: ['react'],
 	parserOptions: {
 		ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
 		sourceType: 'module', // Allows for the use of imports
@@ -19,19 +18,18 @@ module.exports = {
 		// Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
 		// e.g. "@typescript-eslint/explicit-function-return-type": "off",
 		//indent: ['error', 'tab'],
-		'prettier/prettier': ['error',
+		'prettier/prettier': [
+			'error',
 			{
-				useTabs: true
-			}
+				useTabs: true,
+			},
 		],
 	},
 	overrides: [
 		{
 			parser: '@typescript-eslint/parser', // Specifies the ESLint parser
-			files: ['** /*.ts', '**/*.tsx'
-			],
-			plugins: ['@typescript-eslint'
-			],
+			files: ['** /*.ts', '**/*.tsx'],
+			plugins: ['@typescript-eslint'],
 			extends: [
 				'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
 			],
@@ -45,8 +43,7 @@ module.exports = {
 				'no-use-before-define': 'off',
 				'@typescript-eslint/no-explicit-any': 'off',
 				'@typescript-eslint/interface-name-prefix': 'off',
-				'@typescript-eslint/no-use-before-define': ['error'
-				],
+				'@typescript-eslint/no-use-before-define': ['error'],
 			},
 		},
 	],
